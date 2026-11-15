@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#173c30">
+
+  <meta name="description"
+        content="Explorá nuestro menú digital.">
+
+  <title>Menú Digital QR</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO DEL RESTAURANTE -->
+  <header class="header">
+
+    <div class="header-content">
+
+      <img
+        id="restaurant-logo"
+        class="restaurant-logo"
+        src="images/logo.png"
+        alt="Logo del restaurante"
+        hidden
+      >
+
+      <h1 id="restaurant-name">
+        Restaurante Demo
+      </h1>
+
+      <p id="restaurant-description">
+        Descubrí nuestro menú
+      </p>
+
+      <!-- SELECTOR DE IDIOMAS -->
+      <div class="language-container">
+
+        <label for="language-select">
+          Idioma
+        </label>
+
+        <select id="language-select">
+          <!-- Generado desde JavaScript -->
+        </select>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main class="main-container">
+
+    <!-- NOVEDADES -->
+    <section
+      id="news-section"
+      class="news-section"
+      hidden
+    >
+
+      <h2 id="news-title">
+        Novedades
+      </h2>
+
+      <div id="news-container">
+        <!-- Generado desde JavaScript -->
+      </div>
+
+    </section>
+
+
+    <!-- BUSCADOR -->
+    <section class="search-section">
+
+      <label for="search-input" class="sr-only">
+        Buscar productos
+      </label>
+
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Buscar un producto..."
+        autocomplete="off"
+      >
+
+    </section>
+
+
+    <!-- CATEGORÍAS -->
+    <nav
+      id="categories-container"
+      class="categories-container"
+      aria-label="Categorías del menú"
+    >
+      <!-- Generadas desde JavaScript -->
+    </nav>
+
+
+    <!-- MENÚ -->
+    <section class="menu-section">
+
+      <h2 id="menu-title">
+        Nuestro menú
+      </h2>
+
+      <div id="products-container"
+           class="products-container">
+
+        <!-- Productos generados desde JavaScript -->
+
+      </div>
+
+      <p id="empty-message" hidden>
+        No encontramos productos.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+
+    <h2 id="footer-restaurant-name">
+      Restaurante Demo
+    </h2>
+
+    <p id="restaurant-address"></p>
+
+    <div class="social-links">
+
+      <a
+        id="whatsapp-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        hidden
+      >
+        WhatsApp
+      </a>
+
+      <a
+        id="instagram-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        hidden
+      >
+        Instagram
+      </a>
+
+      <a
+        id="reviews-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        hidden
+      >
+        Dejanos una reseña
+      </a>
+
+    </div>
+
+    <p class="footer-credit">
+      Menú digital QR
+    </p>
+
+  </footer>
+
+
+  <!-- ARCHIVOS JAVASCRIPT -->
+
+  <!-- Configuración de cada restaurante -->
+  <script src="config.js"></script>
+
+  <!-- Funcionamiento del menú -->
+  <script src="script.js"></script>
+
+</body>
+</html>
